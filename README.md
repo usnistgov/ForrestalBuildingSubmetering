@@ -19,6 +19,8 @@ This file contains the descriptions of each UsagePoint in the csv files to be co
 ###process.cmd
 batch file to curl up all data in the ./output directory
 
+curl -v -k --cacert ~/git/energyos/test/OpenESPI-GreenButtonCMDTest/SOAPUI/etc/openespi.pem --header "Content-Type:application/xml" --header "Authorization: Bearer 688b026c-665f-4994-9139-6b21b13fbeee" -X POST -d "@DEM_Report_01-01-14.xml" "https://localhost:8443/DataCustodian/espi/1_1/resource/Batch/RetailCustomer/15/UsagePoint"
+
 ###doConvert.cmd
 converts a data file
 
